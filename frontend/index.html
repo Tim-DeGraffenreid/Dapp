@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyToken DApp</title>
+</head>
+<body>
+    <h1>MyToken DApp</h1>
+    
+    <div>
+        <input type="text" id="address" placeholder="Enter Address">
+        <button onclick="getBalance()">Check Balance</button>
+        <div id="balance"></div>
+    </div>
+
+    <div>
+        <input type="text" id="recipient" placeholder="Recipient Address">
+        <input type="text" id="amount" placeholder="Amount">
+        <button onclick="transferTokens()">Transfer Tokens</button>
+        <div id="transactionResult"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
